@@ -6,7 +6,7 @@ import time
 browser = webdriver.Firefox()
 
 browser.get("http://www.google.com")
-
+print(browser.title)
 time.sleep(0.3)
 
 # www.google.com search input name is q
