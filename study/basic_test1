@@ -1,0 +1,19 @@
+# coding = utf - 8
+
+from selenium import webdriver
+import time
+
+browser = webdriver.Firefox()
+
+browser.get("http://www.google.com")
+
+time.sleep(0.3)
+
+# www.google.com search input name is q
+browser.find_element_by_name("q").send_keys("selenium")
+time.sleep(0.3)
+
+browser.find_element_by_name("btnK").click()
+time.sleep(3)
+
+browser.quit()
