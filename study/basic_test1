@@ -16,4 +16,25 @@ time.sleep(0.3)
 browser.find_element_by_name("btnK").click()
 time.sleep(3)
 
+print("maxiumm browser window")
+browser.maximize_window()
+time.sleep(2)
+
+print("setting height and width")
+browser.set_window_size(480, 800)
+time.sleep(2)
+
+print("open ubuntu uri")
+browser.get("http://www.ubuntu.com")
+time.sleep(2)
+
+print("navigate backward")
+browser.back()
+time.sleep(2)
+
+print("navigate forward")
+browser.forward()
+time.sleep(2)
+
 browser.quit()
+print("basic test finished")
